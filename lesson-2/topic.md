@@ -94,18 +94,18 @@ Tạo file `ex4.js`, thêm vào code đáp án cho đề bài sau:
    2. In ra cân nặng lý tưởng, cân nặng tối đa, cân nặng tối thiểu trên cùng một dòng.
 
 # Bài tập vòng lặp
-1. Tạo file ex5.js, thêm vào code đáp ứng cho đề bài sau:
+1. Tạo file `ex5.js`, thêm vào code đáp ứng cho đề bài sau:
    1. Lặp từ 1 tới 100
    2. Trong mỗi vòng lặp, in ra:
       1. Nếu giá trị của vòng lặp chia hết cho 2, in "số <i> là số chẵn"
       2. Nếu giá trị của vòng lặp không chia hết cho 2, in "số <i> là số lẻ"
-2. Tạo file ex6.js, thêm vào code đáp án cho đề bài sau:
+2. Tạo file `ex6.js`, thêm vào code đáp án cho đề bài sau:
    In ra giá trị từ 12 đến 30
-3. Tạo file ex7.js, thêm vào code đáp án cho đề bài sau: 
+3. Tạo file `ex7.js`, thêm vào code đáp án cho đề bài sau: 
    In ra các giá trị chia hết cho 3 từ 1000 đến 2000
-4. Tạo file ex8.js, thêm vào code đáp án cho đề bài sau: 
+4. Tạo file `ex8.js`, thêm vào code đáp án cho đề bài sau: 
    In các giá trị cách nhau 4 đơn vị từ 1 đến 100  
    ví dụ: 1, 5, 9, 13, ...
-5. Tạo file ex9.js. thêm vào code đáp án cho đề bài sau: 
+5. Tạo file `ex9.js`. thêm vào code đáp án cho đề bài sau: 
    In ra các giá trị tử 25 về 12 
    Ví dụ: 25, 24, ... 12
