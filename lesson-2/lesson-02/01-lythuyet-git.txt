@@ -1,0 +1,23 @@
+Giải thích các câu lệnh Git:
+
+1. git init
+   - Khởi tạo một repository Git mới trong thư mục hiện tại
+   - Tạo thư mục .git ẩn chứa các thông tin về repository
+   - Chuyển các file từ vùng "local" sang vùng "working directory"
+
+2. git add <file_name>
+   - Thêm một file cụ thể vào staging area
+   - File được chỉ định sẽ được chuẩn bị để commit
+   - Chỉ file được chỉ định mới được thêm vào staging area
+
+3. git add .
+   - Thêm tất cả các file đã thay đổi trong thư mục hiện tại vào staging area
+   - Dấu chấm (.) đại diện cho thư mục hiện tại
+   - Tất cả các file mới, đã sửa đổi sẽ được thêm vào staging area
+
+4. git commit -m "message"
+   - Tạo một commit mới từ các file đã được thêm vào staging area
+   - Tham số -m cho phép thêm message mô tả cho commit
+   - Sau khi commit, các file trong staging area sẽ được lưu vào repository
+   - Staging area sẽ được làm trống sau khi commit thành công
+

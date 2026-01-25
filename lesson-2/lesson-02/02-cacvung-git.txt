@@ -1,0 +1,40 @@
+Phân tích các file theo từng vùng sau mỗi thao tác:
+
+1. Sau khi tạo 3 file: file1, file2, file3
+   - Local: file1, file2, file3
+   - Working Directory: (trống)
+   - Staging Area: (trống)
+   - Repository: (trống)
+
+2. Sau khi chạy: git init
+   - Local: (trống - các file đã chuyển sang working directory)
+   - Working Directory: file1, file2, file3
+   - Staging Area: (trống)
+   - Repository: (trống)
+
+3. Sau khi chạy: git commit -m"init project"
+   - Local: (trống)
+   - Working Directory: file1, file2, file3
+   - Staging Area: (trống)
+   - Repository: (trống - không có file nào được commit vì chưa có file nào trong staging area)
+   Lưu ý: Lệnh này sẽ không tạo commit vì không có file nào trong staging area
+
+4. Sau khi chạy: git add file1
+   - Local: (trống)
+   - Working Directory: file1, file2, file3
+   - Staging Area: file1
+   - Repository: (trống)
+
+5. Sau khi chạy: git commit -m"add file1"
+   - Local: (trống)
+   - Working Directory: file1, file2, file3
+   - Staging Area: (trống - file1 đã được commit)
+   - Repository: file1 (đã được commit)
+
+6. Sau khi chạy: git commit -m"add file"
+   - Local: (trống)
+   - Working Directory: file1, file2, file3
+   - Staging Area: (trống)
+   - Repository: file1
+   Lưu ý: Lệnh này sẽ không tạo commit mới vì không có file nào trong staging area để commit
+
