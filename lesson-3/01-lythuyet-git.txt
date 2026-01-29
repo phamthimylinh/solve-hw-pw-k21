@@ -1,0 +1,28 @@
+//// Đề bài
+1. Hãy tạo file lesson-03/01-lythuyet-git.txt để trả lời cho các câu hỏi dưới đây: Giải thích các câu lệnh:
+   git commit --amend
+   git commit --amend "<message>"
+   git commit restore --staged <file>
+   git reset HEAD~1
+
+//// Bài làm
+1. git commit --amend: Sửa commit cuối cùng
+- Sửa lại commit cuối cùng mà bạn vừa tạo (trên nhánh hiện tại)
+- Thường dùng khi: muốn sửa lại nội dung commit trước đó
+- Cách hoạt động: Git sẽ mở ra editor (vim) để bạn sửa lại message commit
+- Lưu ý nhỏ: không nên dùng --amend với commit đã push (vì sẽ rewrite history → gây xung đột cho người khác).
+
+2. git commit --amend "<message>": Sửa commit cuối cùng + chỉ định message
+- Tương tự như git commit --amend, nhưng thay vì mở editor, bạn truyền thẳng message mới luôn.
+- Ví dụ: git commit --amend -m "Fix icon button submit"
+
+3. git restore --staged <file>: Bỏ staging file
+- Bỏ 1 hoặc nhiều file từ vùng staging ra vùng working directory và vẫn giữ nguyên những thay đổi của file đó trong vùng working directory
+- Ví dụ: git restore --staged src/login.js → src/login.js được đưa ra khỏi staging, nhưng các thay đổi vẫn còn trong working directory.
+
+4. git reset HEAD~1: Xóa commit cuối, đưa thay đổi về vùng working
+- Di chuyển HEAD lùi về commit trước đó 1 bước (HEAD~1 = cha của commit hiện tại)
+- Luồng hoạt động:
++ Commit cuối bị xóa khỏi lịch sử của nhánh (git log)
++ Các thay đổi của commit bị xóa trở về vùng working directory
+- Mặc định dùng mode --mixed (git reset HEAD~1) còn 2 mode nữa là --soft (đưa các file thay đổi về vùng staging), --hard (xóa sạch cả commit lẫn mọi thay đổi).

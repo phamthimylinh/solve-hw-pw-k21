@@ -12,5 +12,10 @@ Ví dụ:
 # Bài tập 
 1. Hãy tạo file `lesson-03/01-lythuyet-git.txt` để trả lời cho các câu hỏi dưới đây:
 Giải thích các câu lệnh:    
-`git c`
+`git commit --amend`    
+`git commit --amend "<message>"`    
+`git restore --staged <file>`    
+`git reset HEAD~1`    
+
+2. Hãy tạo file lesson-03/02-thuc-hanh-git.txt
 
