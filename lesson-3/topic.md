@@ -12,5 +12,13 @@ Ví dụ:
 # Bài tập 
 1. Hãy tạo file `lesson-03/01-lythuyet-git.txt` để trả lời cho các câu hỏi dưới đây:
 Giải thích các câu lệnh:    
-`git c`
+`git commit --amend`    
+`git commit --amend "<message>"`    
+`git restore --staged <file>`    
+`git reset HEAD~1`    
+
+2. Hãy tạo file lesson-03/02-thuc-hanh-git.txt để ghi đáp án cho câu hỏi sau  
+    Giả sử có 1 folder demo mới được tạo. Hãy liệt kê các file theo từng vùng.
+    Liệt kê các commit và message tương ứng sau khi thao tác 1 loại các lệnh sau( sẽ rất tuyệt vời nếu bạn không chạy trên máy tính thật, mà bạn chạy trong đầu, sẽ giúp bạn hiểu về Git rõ ràng hơn):
+    Trình bày theo format liệt kê rõ từng bước, mỗi bước thì các vùng có file nào. Việc này sẽ giúp mentor chấm bài kĩ hơn và kiểm tra rằng bạn hiểu đúng
 
