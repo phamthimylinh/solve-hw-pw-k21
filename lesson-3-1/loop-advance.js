@@ -80,3 +80,37 @@ console.log(pairs.join('\n'));
 //     seenNumbers.add(num);
 // });
 // console.log(pairs.join('\n'));
+
+console.log('// Bai 6');
+const triangleRows = 5;
+let triangle = '';
+for (let i = triangleRows; i >= 1; i--) {
+    for (let j = 1; j <= i; j++) {
+        triangle += `${j} `;
+    }
+    triangle += '\n';
+}
+console.log(triangle);
+
+console.log('// Bai 6: cach 2');
+const n = 5;
+// Tạo mảng gốc: [1, 2, 3, 4, 5]
+let base = Array.from({ length: n }, (_, i) => i + 1);
+
+for (let i = n; i >= 1; i--) {
+    // Cắt mảng từ vị trí 0 đến i và nối thành chuỗi
+    console.log(base.slice(0, i).join(' '));
+}
+
+console.log('// Bai 6: cach 3');
+function drawTriangle(n) {
+    if (n < 1) return; // Điểm dừng
+
+    let row = '';
+    for (let i = 1; i <= n; i++) row += i + ' ';
+    console.log(row);
+
+    drawTriangle(n - 1); // Gọi lại chính nó với n - 1
+}
+
+drawTriangle(5);
