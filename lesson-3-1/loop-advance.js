@@ -28,15 +28,20 @@ console.log(tamgiac);
 
 console.log('// Bai 4');
 let hcn = '';
-for (let i = 1; i <= 5; i++) {
-    for (let j = 1; j <= 8; j++) {
-        if(i === 1 || i === 5) {
-            hcn += '********' + ' ';
-        }
-        if (j == 1 && j == 8) {
-            hcn += '        ' + ' ';
+let cols = 8;
+let rows = 5;
+
+for (let i = 1; i <= rows; i++) {
+    for (let j = 1; j <= cols; j++) {
+        // hang dau hang cuoi, cot dau cot cuoi
+        if(i === 1 || i === rows || j === 1 || j === cols) {
+            hcn += '*';
+        } else {
+            hcn += ' ';
         }
     }
     hcn += '\n';
 }
 console.log(hcn);
+
+console.log('// Bai 5');
