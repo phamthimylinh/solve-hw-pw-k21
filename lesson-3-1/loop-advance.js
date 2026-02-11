@@ -114,3 +114,33 @@ function drawTriangle(n) {
 }
 
 drawTriangle(5);
+
+console.log('// Bai 7');
+let totalDays = 30;
+let output = "Tuần 1:";
+
+for (let i = 1; i <= totalDays; i++) {
+    output += ` ${i}`;
+    
+    // Nếu là ngày cuối tuần (chia hết cho 7) và chưa phải ngày cuối tháng
+    if (i % 7 === 0 && i < totalDays) {
+        output += `\nTuần ${Math.floor(i / 7) + 1}:`;
+    }
+}
+
+console.log(output);
+
+console.log('// Bai 7: cach 2');
+let thang = '';
+for (let i = 1; i <= 5; i++) {
+    thang += `Tuần ${i}: `;
+    for (let j = 1; j <= 7; j++) {
+        let day = (i - 1) * 7 + j;
+        if (day > 30) {
+            break;
+        }
+        thang += `${day} `;
+    }
+    thang += '\n';
+}
+console.log(thang);
