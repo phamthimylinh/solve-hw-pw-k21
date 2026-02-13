@@ -1,0 +1,17 @@
+a.​ git clone <url>
+- Tải 1 dự án từ server về máy tính lần đẩu tiên
+
+b.​ git branch <branch_name>
+- Tạo một nhánh mới trên nhánh hiện tại
+
+
+c.​ git checkout <branch_name>
+- Chuyển sang 1 nhánh khác đã tồn tại.
+
+
+d.​ git checkout -b <branch_name>
+- Tạo 1 nhánh mới và nhảy sang nhánh mới đó
+
+
+e.​ git pull origin master
+- Cập nhật code mới nhất từ nhánh master trên server về máy tính cá nhân.
