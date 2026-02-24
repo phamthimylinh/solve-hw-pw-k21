@@ -24,6 +24,7 @@ class Order {
         this.items.push(item);
         this.totalAmount = this.calculateTotalAmount();
     }
+    
 
     calculateTotal(): number {
         return this.items.reduce((total, item) => total + item.amount * item.price * (1 - item.discount), 0);
