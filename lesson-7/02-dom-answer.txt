@@ -1,0 +1,75 @@
+// Đứng tại vị trí của //div[@id='child']
+File dom lesson-7/dom.html
+
+Format liệt kê:
+```
+a. Các phần tử con:
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required="">
+b. Các phần tử cha: không có
+```
+
+---------------------------------------------
+a. Các phần tử con (child): 2
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required="">
+
+b. Các phần tử cha (parent): 1
+<form id="registrationForm">
+
+c. Các phần tử hậu duệ (descendant): 2
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required="">
+(Trong trường hợp này, các phần tử con cũng chính là hậu duệ duy nhất vì không có lớp con sâu hơn bên trong email/input)
+
+d. Các phần tử tổ tiên (ancestor): 1
+<form id="registrationForm">
+(có thể còn các node gốc body, html)
+
+e. Các phần tử anh em (sibling): 4
+<div class="form-group" id="parent">
+<div class="form-group"></div>
+<div class="form-group"></div>
+<div class="form-group"></div>
+(Bao gồm tất cả các thẻ div cùng cấp nằm trong form)
+
+f. Các phần tử phía sau (following): 23
+<div class="form-group"></div>
+<label for="gender">Gender:</label>
+<div style="width: 70%; display: flex; justify-content: space-between;">
+<div></div>
+<input type="radio" id="male" name="gender" value="male">
+<label nostyle="" for="male">Male</label>
+<div></div>
+<input type="radio" id="female" name="gender" value="female">
+<label nostyle="" for="female">Female</label>
+
+<div class="form-group"></div>
+<label for="hobbies">Hobbies:</label>
+<div style="width: 70%; display: flex; flex-wrap: wrap; justify-content: space-between;">
+<div></div>
+<input type="checkbox" id="reading" name="hobbies" value="reading">
+<label nostyle="" for="reading">Reading</label>
+<div></div>
+<input type="checkbox" id="traveling" name="hobbies" value="traveling">
+<label nostyle="" for="traveling">Traveling</label>
+<div></div>
+<input type="checkbox" id="cooking" name="hobbies" value="cooking">
+<label nostyle="" for="cooking">Cooking</label>
+
+<div class="form-group"></div>
+<button type="submit">Register</button></div>
+
+g. Các phần tử phía trước (preceding): 3
+<div class="form-group" id="parent"></div>
+<label for="username" id="preceding">Username:</label>
+<input type="text" id="username" name="username" required="">
+(Tất cả các thẻ nằm trước thẻ #child trong cây DOM, không tính tổ tiên)
+
+h. Các phần tử anh em phía sau cùng cấp (following-sibling): 3
+<div class="form-group"></div>
+<div class="form-group"></div>
+<div class="form-group"></div>
+
+i. Các phần tử anh em phía trước cùng cấp (preceding-sibling): 1
+<div class="form-group" id="parent"></div>
