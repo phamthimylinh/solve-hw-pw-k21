@@ -29,3 +29,6 @@ const team = new Team("Team 1", [
 ]);
 team.addPlayer({ id: 3, name: "Player 3", age: 22, position: "Defender" });
 console.log(team.listPlayers());
+team.listPlayers().forEach(player => {
+    console.log(player);
+});
